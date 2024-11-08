@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       userMobile.textContent = `Mobile: ${userData.mobile}`;
     } else if (response.status === 401) {
       alert("User not logged in. Redirecting to login page...");
-      window.location.href = 'http://localhost:3000/index.html';
+      window.location.href = 'http://localhost:3000/login.html';
     } else {
       alert("Failed to load account details.");
     }
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       if (response.ok) {
         alert("Logged out successfully!");
-        window.location.href = 'http://localhost:3000/index.html';
+        window.location.href = 'http://localhost:3000/login.html';
       } else {
         alert("Failed to log out.");
       }

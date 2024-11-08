@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const message = await response.text();
                 alert(message); 
                 signupForm.reset(); 
-                window.location.href='http://localhost:3000/index.html';
+                window.location.href='http://localhost:3000/login.html';
             } else {
                 const errorText = await response.text();
                 errorMessage.textContent = errorText; 
